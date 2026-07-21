@@ -1,0 +1,43 @@
+{
+    "model_name": "Linear Regression (Baseline)",
+    "timestamp": "2026-07-19 23:20:11",
+    "features_used": [
+        "GRE Score",
+        "TOEFL Score",
+        "University Rating",
+        "SOP",
+        "LOR",
+        "CGPA",
+        "Research"
+    ],
+    "train_test_split": {
+        "train_size": 400,
+        "test_size": 100,
+        "test_ratio": 0.2,
+        "random_state": 42
+    },
+    "training_metrics": {
+        "RMSE": 0.03238410871448671,
+        "MAE": 0.024975708683631383,
+        "MAPE (%)": 5.258466665420578,
+        "R\u00b2 Score": 0.9199518139327504,
+        "MSE": 0.0010487304972316939
+    },
+    "testing_metrics": {
+        "RMSE": 0.03035681473208579,
+        "MAE": 0.024910036482794093,
+        "MAPE (%)": 5.164110420763228,
+        "R\u00b2 Score": 0.94167551463541,
+        "MSE": 0.0009215362006781808
+    },
+    "model_intercept": -2.3587506470117585,
+    "model_coefficients": {
+        "GRE Score": 0.004676373122152738,
+        "TOEFL Score": 0.00656204636323059,
+        "University Rating": 0.022493603851946535,
+        "SOP": 0.02180510690470125,
+        "LOR": 0.02294486005018482,
+        "CGPA": 0.056546443831521236,
+        "Research": 0.04180703239009979
+    }
+}

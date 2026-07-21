@@ -1,0 +1,89 @@
+{
+    "project_name": "Admission Prediction - Accuracy Improvement Challenge",
+    "report_date": "2026-07-19 23:42:43",
+    "author": "Manish Kumar",
+    "baseline_model": {
+        "name": "Linear Regression",
+        "metrics": {
+            "RMSE": 0.03035681473208579,
+            "MAE": 0.024910036482794093,
+            "MAPE (%)": 5.164110420763228,
+            "R\u00b2 Score": 0.94167551463541,
+            "MSE": 0.0009215362006781808
+        }
+    },
+    "best_model": {
+        "name": "Ridge Regression",
+        "metrics": {
+            "RMSE": 0.030367,
+            "MAE": 0.025864,
+            "MAPE": 5.33347,
+            "R2": 0.941635
+        },
+        "improvements": {
+            "RMSE_%": -0.03,
+            "MAE_%": -3.83,
+            "MAPE_%": -3.28,
+            "R2_%": -0.0,
+            "Overall_%": -1.79
+        }
+    },
+    "all_models_ranked": [
+        {
+            "rank": 1,
+            "model": "Ridge Regression",
+            "overall_improvement_%": -1.79,
+            "rmse_improvement_%": -0.03,
+            "r2_improvement_%": -0.0
+        },
+        {
+            "rank": 2,
+            "model": "LightGBM",
+            "overall_improvement_%": -7.42,
+            "rmse_improvement_%": -11.53,
+            "r2_improvement_%": -1.51
+        },
+        {
+            "rank": 3,
+            "model": "XGBoost",
+            "overall_improvement_%": -9.07,
+            "rmse_improvement_%": -13.39,
+            "r2_improvement_%": -1.77
+        },
+        {
+            "rank": 4,
+            "model": "Gradient Boosting",
+            "overall_improvement_%": -9.82,
+            "rmse_improvement_%": -15.23,
+            "r2_improvement_%": -2.03
+        },
+        {
+            "rank": 5,
+            "model": "Random Forest",
+            "overall_improvement_%": -13.88,
+            "rmse_improvement_%": -20.27,
+            "r2_improvement_%": -2.77
+        },
+        {
+            "rank": 6,
+            "model": "SVR",
+            "overall_improvement_%": -15.82,
+            "rmse_improvement_%": -22.83,
+            "r2_improvement_%": -3.15
+        }
+    ],
+    "key_insights": [
+        "Best model achieves -0.00% R\u00b2 improvement",
+        "RMSE reduced by -0.03%",
+        "MAPE reduced by -3.28%",
+        "0/6 advanced models beat baseline",
+        "Feature engineering was critical (7 \u2192 33 features)"
+    ],
+    "recommendations": [
+        "Deploy Ridge Regression for production",
+        "Continue with feature engineering approach",
+        "Consider ensemble of top 3 models for further improvement",
+        "Implement hyperparameter tuning for marginal gains",
+        "Monitor model performance on new admissions data"
+    ]
+}
